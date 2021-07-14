@@ -14,6 +14,9 @@ COMMON CSS PROPERTIES START
     padding: 15px 25px;
     border: 1px solid #E02C6D;
 }
+.fa-arrow-right{
+    padding-left:10px;
+}
 
 /* ------------------------
 COMMON CSS PROPERTIES END
@@ -29,26 +32,12 @@ body,html{
 section 1 START 
 ------------------*/
 .section-1{
+    display: flex;
     background-color: #2D25A0;
     margin-bottom:70px;
+    margin-top: 0;
     padding-top: 42px;
     padding-bottom:20px;
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    margin-left:156px;
-    width:80%;
-    height: 44px;
-    align-items: center;
-}
-.links a{
-    color: white;
-    text-decoration: none;
-    margin-left:40px;
-}
-.links a:hover{
-    text-decoration: underline;
 }
 .landing-texts h1{
     color: white;
@@ -69,7 +58,7 @@ section 1 START
 .login-button a i{
     padding-right:10px;
 }
-.landing-page{
+.section-1{
     display: flex;
     margin-top: 49px;
 }
@@ -91,9 +80,20 @@ section 1 START
 /*---------------- 
 section 1 END 
 ------------------*/
+
+/*---------------- 
+EXTRA section 1 START 
+------------------*/
 #result-text{
     text-align: center;
 }
+
+h6{
+    text-align: center;
+    margin-top:80px;
+    font-size: 1.5rem;
+}
+
 .extra-sec-1{
     display: flex;
     flex-direction:row;
@@ -118,6 +118,9 @@ section 1 END
 .team-2-img img{
     margin-left:20px;
 }
+/*---------------- 
+EXTRA section 1 END 
+------------------*/
 
 /*---------------- 
 section 2 START 
@@ -136,7 +139,7 @@ section 2 START
     flex-direction:column;
     width: 330px;
     height: 474px;
-    box-shadow: 2px 2px 2px lightgray;
+    box-shadow: 3px 3px 15px lightgray;
 }
 .card-image img{
     width: 320px;
@@ -158,9 +161,13 @@ section 3 START
     margin-right: 182px;
     height:427px;
 }
+#sec-3-link{
+    color: white;
+    text-decoration: none;
+}
 .sec-3-info{
     margin-right: 69px;
-    height:427px;
+    /* height:427px; */
 }
 .sec-3-info h1{
     font-size: 48px;
@@ -168,6 +175,10 @@ section 3 START
 .sec-3-image img{
     width:567px;
     height:427px;
+}
+.sec-3-button{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /*---------------- 
@@ -180,12 +191,13 @@ section 4 START
 .section-4{
     margin-top: 158px;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: center;
-    align-items: center;
-    width:483.87px;
+    align-items: center; 
+    /* width:483.87px;
     height:213px;
-    margin-left:475px;
+    margin-left:475px; */
+    margin-top:200px;
 }
 
 .sec-4-image img{
@@ -200,12 +212,101 @@ section 4 START
 .logo{
     width:16px;
     height:13px;
-    margin:auto 22px;
+    margin-left: 22px;  
+    margin-right: 22px;
     background-color: gray;
-    padding:8px 8px;
-    border-radius: 50%;
+    padding:10px 10px;
+    border-radius:50%;
 }
 
-.section-4 footer{
+footer{
     text-align: center;
 }
+
+/*---------------- 
+section 4 END
+------------------*/
+
+/*-------------------------- 
+Media  Query Part for MOBILE
+---------------------------*/
+@media only screen and (max-width:992px) {
+    body,html{
+        overflow-x: hidden;
+    }
+    
+    .section-1{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content:flex-start;
+        margin: 0;
+    }
+    .landing-texts{
+        margin: 0;
+    }
+    .landing-image{
+        margin-top:50px;
+    }
+
+
+    .section-2{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        margin-left:0;
+        margin-bottom:400px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-3{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        margin-left:0;
+        margin-bottom: 30px;
+    }
+    .section-3-image{
+        margin-top:200px;
+    }
+    .section-4{
+        margin-top:450px;
+    }
+ }
+
+ /*-------------------------- 
+Media  Query Part for TABLET
+---------------------------*/
+
+ @media only screen and (min-width:993px) and (max-width: 1024px){
+     body{
+         overflow-x: hidden;
+     }
+    .section-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+     }
+     .section-3{
+         display: grid;
+         grid-template-rows: repeat(2,1fr);
+         margin-top: 10px;
+     }
+     .sec-3-info{
+         width: 100%;
+     }
+     .sec-3-info h1{
+         text-align: center;
+     }
+     .section-4{
+         display: flex;
+         flex-direction:column;
+         justify-content: center;
+         align-items: center;
+         margin-top:600px;
+
+     }
+ } 
+
