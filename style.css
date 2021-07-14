@@ -53,7 +53,11 @@ section 1 START
 .landing-texts h1{
     color: white;
 }
-.landing-button:hover{
+.landing-button a{
+    text-decoration: none;
+    color: white;
+}
+.button:hover{
     box-shadow: 1px 1px 3px #ffa2f0;
 }
 .login-button a{
@@ -87,6 +91,33 @@ section 1 START
 /*---------------- 
 section 1 END 
 ------------------*/
+#result-text{
+    text-align: center;
+}
+.extra-sec-1{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.team-1{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-2{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.team-2-img img{
+    margin-left:20px;
+}
 
 /*---------------- 
 section 2 START 
@@ -129,8 +160,52 @@ section 3 START
 }
 .sec-3-info{
     margin-right: 69px;
+    height:427px;
+}
+.sec-3-info h1{
+    font-size: 48px;
 }
 .sec-3-image img{
     width:567px;
     height:427px;
+}
+
+/*---------------- 
+section 3 END
+------------------*/
+
+/*---------------- 
+section 4 START 
+------------------*/
+.section-4{
+    margin-top: 158px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:483.87px;
+    height:213px;
+    margin-left:475px;
+}
+
+.sec-4-image img{
+   width:482px;
+}
+.sec-4-logos{
+    margin-top: 20px;
+    margin-left:40px;
+    margin-bottom:20px;
+}
+
+.logo{
+    width:16px;
+    height:13px;
+    margin:auto 22px;
+    background-color: gray;
+    padding:8px 8px;
+    border-radius: 50%;
+}
+
+.section-4 footer{
+    text-align: center;
 }
