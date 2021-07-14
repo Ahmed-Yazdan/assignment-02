@@ -1,3 +1,94 @@
-h1{
-    color: blue;
+/* ------------------------
+COMMON CSS PROPERTIES START
+-------------------------- */
+.width-50{
+    width: 50%;
 }
+.big-font{
+    font-size: 64px;
+    font-weight: 700;
+    color: white ;
+}
+.button{
+    background-color: #E02C6D;
+    color: white;
+    padding: 15px 25px;
+    border: 1px solid #E02C6D;
+}
+
+/* ------------------------
+COMMON CSS PROPERTIES END
+-------------------------- */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*---------------- 
+section 1 START 
+------------------*/
+.section-1{
+    background-color: #2D25A0;
+    margin-bottom:70px;
+    padding-top: 42px;
+    padding-bottom:20px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-left:156px;
+    width: 1160px;
+    height: 44px;
+    align-items: center;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    margin-left:40px;
+}
+.landing-button:hover{
+    box-shadow: 1px 1px 3px #ffa2f0;
+}
+.login-button a{
+    background-color: #E02C6D;
+    color: white;
+    text-decoration: none;
+    padding: 13px 15px;
+}
+.login-button a i{
+    padding-right:10px;
+}
+.landing-page{
+    display: flex;
+    margin-top: 49px;
+}
+.landing-texts{
+    margin-left:286px;
+}
+.landing-image img{
+    width: 388px;
+    height: 428px;
+    margin-left:84px;
+    transition: transform 0.5s ease-in-out;
+}
+.landing-image img:hover{
+    transform:scale(1.1);
+}
+.landing-button i{
+    padding-left:10px;
+}
+/*---------------- 
+section 1 END 
+------------------*/
+
+/*---------------- 
+section 2 START 
+------------------*/
+.card-image img{
+    width: 320px;
+    height: 230px;
+}
+
+
+
